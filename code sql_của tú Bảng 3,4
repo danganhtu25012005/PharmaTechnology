@@ -1,0 +1,23 @@
+create database QuanLyThuoc
+go
+use QuanLyThuoc;
+
+create table taikhoan(
+MaTK int primary key ,
+username nvarchar(50) not null,
+password nvarchar(50) not null,
+MaNV int not null,
+MaVT int not null
+);
+
+create table khachhang(
+MaKH int primary key ,
+TenKH nvarchar(50) not null,
+Tuoi int not null,
+SDT int not null,
+Email nvarchar(55) not null,
+Gioitinh bit not null,
+Diachi nvarchar(200) not null,
+ngaythamgia date not null
+);
+
